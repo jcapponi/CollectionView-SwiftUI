@@ -19,7 +19,6 @@ struct URLImageView: View {
     var body: some View {
         Image(uiImage: urlImageModel.image ?? URLImageView.defaultImage!)
             .resizable()
-            .scaledToFit()
     }
     
     static var defaultImage = UIImage(named: "loading.jpg")
